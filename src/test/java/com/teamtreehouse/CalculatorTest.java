@@ -41,5 +41,10 @@ public class CalculatorTest {
         assertEquals(3, result);
     }
 
+    @Test
+    public void floatingPointDivisionWorks() throws Exception {
+        float result = calc.divide(7.0f , 2.0f);
 
+        assertEquals(3.5, result, 0);
+    }
 }
